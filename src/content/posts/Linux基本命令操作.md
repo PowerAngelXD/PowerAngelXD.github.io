@@ -23,7 +23,7 @@ cat [file-name]
 ```
 cat [file-1] [file-2] ... > [file-n]
 ```
-将file-1，-2，.....的内容连接起来，再写入文件file-n中\
+将file-1，-2，.....的内容连接起来，再写入文件file-n中
 ```
 举个例子，假如有文件file-1，file-2，file-3
 其中file-1内容为一个数字1，file-2内容为数字2，file-3内容为数字3
