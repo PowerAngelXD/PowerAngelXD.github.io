@@ -1,6 +1,6 @@
 ---
 title: Linux基本命令操作
-published: 2025-10-03
+published: 2025-10-05
 description: ''
 image: ''
 tags: [Linux]
