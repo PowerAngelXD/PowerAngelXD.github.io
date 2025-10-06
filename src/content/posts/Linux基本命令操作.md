@@ -1,6 +1,6 @@
 ---
 title: Linux基本命令操作
-published: 2025-10-05
+published: 2025-10-06
 description: ''
 image: ''
 tags: [Linux]
@@ -425,11 +425,357 @@ man [cmd]
 
 **使用效果**
 
-![../img/LinuxCmd/man.png](../img/LinuxCmd/man.png)
+![../img/LinuxCmd/man.png](../../img/LinuxCmd/LinuxCmd/man.png)
 
-### 20. `info` 指令
+### 20. `info` 命令
 与man命令类似，但是功能更高级
 
 **使用效果**
 
 ![../img/LinuxCmd/info.png](../img/LinuxCmd/info.png)
+
+### 21. `help` 命令
+用于简略的查看各个命令的帮助
+
+> [!WARNING]
+> 该命令是bash的内建命令，因此当运行其它shell的时候会提示“help not found”
+
+**使用效果**
+
+![../img/LinuxCmd/help.png](../img/LinuxCmd/help.png)
+
+### 22. `which` 命令
+用于定位系统中的可执行文件，返回第一个找到的结果
+
+**使用效果**
+
+![../img/LinuxCmd/which.png](../img/LinuxCmd/which.png)
+
+#### 参数
+`-a`：列出全部符合要求的项目
+
+![../img/LinuxCmd/which2.png](../img/LinuxCmd/which2.png)
+
+### 23. `whereis` 命令
+whereis命令提供了比which更多的信息，除了可执行文件以外，它还能定位其他的相关文件，如手册文件或者源代码文件
+
+**使用效果**
+
+![../img/LinuxCmd/whereis.png](../img/LinuxCmd/whereis.png)
+
+### 24. `find` 命令
+用于查找指定的文件
+```bash
+find [source] -[mode] [expect]
+```
+
+#### 常见mode：
+`-name`：按照文件名查找
+`-iname`：不分大小写查找文件
+
+**使用效果**
+
+![../img/LinuxCmd/find.png](../img/LinuxCmd/find.png)
+
+### 24. `locate` 命令
+用于列出路径中匹配给定pattern的实例
+```bash
+locate [options] [pattern]
+```
+
+**使用效果**
+
+![../img/LinuxCmd/locate2.png](../img/LinuxCmd/locate2.png)
+
+#### 常见参数
+`-n N`：指定输出找到的前N行
+
+![../img/LinuxCmd/locate.png](../img/LinuxCmd/locate.png)
+
+`-i`：忽略大小写进行查找
+
+`-b`：仅匹配基本名称（仅关注路径的最后部分）
+
+### 25. `grep` 命令
+grep是linux中的一个文本搜索工具，用于在文件中查找符合条件的字符串或者正则表达式
+```bash
+grep [options] pattern [files]
+```
+**使用效果**
+
+![../img/LinuxCmd/grep.png](../img/LinuxCmd/grep.png)
+
+#### 参数
+`-i`：忽略大小写进行匹配
+
+`-v`：查找不匹配的行
+
+`-n`：显示匹配的行的行号
+
+`-l`：只打印匹配的文件的文件名
+
+### 26. `shutdown` 命令
+用于关机
+
+#### 参数
+`now`：指定现在就关机
+
+### 27. `reboot` 命令
+用于重启系统
+
+### 28. `init` 命令
+设置系统的Runlevel参数，是一种系统级命令
+
+### 29. `systemctl` 命令
+用于管理systemd系统和服务管理器的工具
+```bash
+systemctl [options] command [name]
+```
+#### 参数
+`start`：启动指定的服务
+
+`stop`：停止指定的服务
+
+`restart`：重启指定的服务
+
+`status`：查看指定服务的状态
+
+**使用效果**
+
+![../img/LinuxCmd/systemctl.png](../img/LinuxCmd/systemctl.png)
+
+`enable`：设置服务开机自启
+
+### 30. `ifconfig` 命令
+该命令允许用户查看和设置网络设备的状态，例如分配IP地址、启用或禁用网络接口、管理ARP缓存和路由等
+```bash
+ifconfig [eth] [options]
+```
+
+**使用效果**
+
+![../img/LinuxCmd/ifconfig.png](../img/LinuxCmd/ifconfig.png)
+
+#### 参数
+`up/down`：up用于启用网卡，down用于关闭网卡
+
+`mtu`：设置最大传输单元（单位：byte）
+
+`add/del`：新增（删除）IP地址，临时生效
+
+### 31. `ping` 命令
+该命令用于检测与另一台主机之间的网络连接
+
+**使用效果**
+
+![../img/LinuxCmd/ping.png](../img/LinuxCmd/ping.png)
+
+#### 参数
+`-c N`：设置发送请求的次数为N
+
+`-i N`：设置每隔N秒发送一个请求
+
+`-s S`：设置发送的数据包大小（单位：byte）
+
+### 32. `netstat` 命令
+该命令用于显示网络连接、路由表、接口统计数据、伪装连接、多播成员等网络相关信息
+
+**使用效果**
+
+![../img/LinuxCmd/netstat.png](../img/LinuxCmd/netstat.png)
+
+### 32. `w` 命令
+该命令用于显示当前登录到系统中的用户及其进程的信息。它可以显示谁已登录，以及他们正在执行的活动和进程
+
+**使用效果**
+
+![../img/LinuxCmd/w.png](../img/LinuxCmd/w.png)
+
+### 33. `last` 命令
+该命令追踪用户的登录情况，包括登录时间、持续时间、登录终端以及登录IP地址等信息
+
+**使用效果**
+
+![../img/LinuxCmd/last.png](../img/LinuxCmd/last.png)
+
+### 34. `lastlog` 命令
+该命令可以查看到每个系统用户最近一次登陆系统的时间
+
+**使用效果**
+
+![../img/LinuxCmd/lastlog.png](../img/LinuxCmd/lastlog.png)
+
+### 35. `echo` 命令
+用于输出显示文本或者是变量的值
+
+**使用效果**
+
+![../img/LinuxCmd/echo.png](../img/LinuxCmd/echo.png)
+#### 其他用法
+- 重定向操作
+  ```bash
+  echo [text] > [target]
+  ```
+  这个用法会使echo的内容输入到文件target中去
+
+  **使用效果**
+
+  ![../img/LinuxCmd/echo2.png](../img/LinuxCmd/echo2.png)
+
+### 36 - 43：关于用户系统的命令操作
+先对Linux的用户系统进行简单的介绍
+
+1. 用户 (Users)
+在 Linux 中，每个与系统交互的实体（无论是人还是系统服务）都被视为一个用户。
+
+唯一标识： 每个用户都有一个用户名 (Username) 和一个唯一的用户 ID (UID)。
+
+UID 0： 始终保留给 root (超级用户)。
+
+root 用户（超级用户）：
+
+也被称为管理员。
+
+拥有最高权限，可以执行系统上的任何操作，包括修改系统配置、安装软件和访问任何文件。
+
+出于安全考虑，日常操作不建议直接使用 **root** 账户，而是使用 **sudo** 命令临时获取权限。
+
+普通用户：
+
+通过日常登录使用的账户。
+
+权限受限，通常只能在自己的家目录 (/home/username) 中自由操作。
+
+系统用户：
+
+为特定的系统服务（如 daemon、sshd、mysql 等）创建的账户。
+
+它们的 UID 通常低于 1000，没有登录 Shell，主要用于隔离和限制服务的权限，以增强系统安全性。
+
+2. 用户组 (Groups)
+用户组是用户的集合。它简化了权限管理：与其为每个用户单独设置权限，不如将权限授予一个组，然后将需要的用户加入该组。
+
+唯一标识： 每个组都有一个组名和一个唯一的组 ID (GID)。
+
+主组 (Primary Group)：
+
+用户登录时自动归属的默认组。
+
+用户创建的新文件或目录通常会自动将该组设置为其主组。
+
+附加组 (Secondary Groups)：
+
+用户可以同时属于多个附加组，从而获得这些组所赋予的额外资源访问权限。
+
+例如，用户可能需要加入 **wheel** 或 **sudo** 组才能使用 **sudo** 命令。
+
+其中：涉及到/etc/passwd和/etc/shadow两个文件
+
+这两个文件是 Linux/Unix 系统中用户账户管理的核心。它们协同工作，/etc/passwd 负责存储用户的一般信息，而 /etc/shadow 则负责存储敏感的安全信息，特别是加密后的密码
+
+其中，对于 `$` 和 `#` 符号，给出下面的解释
+
+`$`：是普通的用户，权限受到限制
+`#`：是超级用户“root”
+
+下面对与用户和组管理密切相关的一组常用命令进行说明：`useradd`、`passwd`、`usermod`、`userdel`、`su`、`groupadd`、`groupdel`、`gpasswd`
+
+#### useradd（创建用户）
+用途：创建新用户账号并初始化账户相关文件
+```
+useradd [options] username
+```
+常用选项：
+- `-m`：创建用户主目录（例如 /home/username）
+- `-d home_dir`：指定主目录路径
+- `-s shell`：指定登录 shell（例如 /bin/bash）
+- `-G group1,group2`：指定附加组
+- `-u UID`：指定用户的 UID
+
+#### passwd（设置/修改密码）
+用途：设置或更改用户密码，或锁定/解锁账户密码
+```
+passwd [options] [username]
+```
+常用用法：
+- 交互式：直接运行 `passwd` 或 `passwd username`，按提示输入新密码
+- `-l username`：锁定用户密码（在 `/etc/shadow` 中加 `!`）
+- `-u username`：解锁用户密码
+
+注意：修改密码后建议遵循强密码策略，必要时配合 PAM 策略限制
+
+#### usermod（修改用户）
+用途：修改已有用户的属性（如用户名、主目录、附加组、登录 shell 等）
+```
+usermod [options] username
+```
+常用选项：
+- `-l new_login`：更改登录名。
+- `-d home_dir`：更改主目录（配合 `-m` 移动原有内容）
+- `-m`：移动主目录内容。
+- `-G group1,group2`：设置附加组（覆盖）。
+- `-aG group`：追加附加组（与 `-G` 一起使用时保留原组）
+- `-s shell`：设置登录 shell。
+
+注意：对正在登录的用户修改某些属性可能无效或带来风险，操作前请备份并确认无活跃进程
+
+#### userdel（删除用户）
+用途：删除系统用户账号。
+```
+userdel [options] username
+```
+常用选项：
+- `-r`：同时删除用户主目录和邮件目录
+
+注意：删除前请确认用户无重要数据或运行中进程，可先锁定账号（`usermod -L username`）并备份主目录
+
+#### su（切换用户）
+用途：切换为另一个用户（默认切换到 root）
+```
+su [options] [username]
+```
+常见用法：
+- `su`：切换到 root（需 root 密码）
+- `su -` 或 `su -l`：切换并加载目标用户登录环境
+- `su username`：切换到指定用户
+
+注意：现代发行版通常推荐使用 `sudo`（如 `sudo -i` 或 `sudo -s`）代替直接使用 `su`。
+
+#### groupadd（创建组）
+用途：创建新组。
+```
+groupadd [options] groupname
+```
+常用选项：
+- `-g GID`：为新组指定 GID（组 ID）
+
+#### groupdel（删除组）
+用途：删除已有组。
+```
+groupdel groupname
+```
+
+注意：删除组不会自动删除其用户，需要先调整这些用户的主组或附加组
+
+#### gpasswd（管理组）
+用途：管理组密码、组管理员和成员关系
+```
+gpasswd [options] group
+```
+常用选项：
+- `-a user`：添加成员。
+- `-d user`：删除成员。
+- `-A user1,user2`：设置组管理员。
+- `-R`：移除组密码相关信息（修改 /etc/gshadow）
+
+注意：现代系统一般不用组口令，更常通过组和 sudo 等机制管理权限
+
+### 引用
+- [Linux系统之ifconfig命令的基本使用](https://zhuanlan.zhihu.com/p/12614202912)
+- [Linux last和lastlog命令：查看过去登陆的用户信息](https://c.biancheng.net/view/3875.html)
+- [Linux基础命令systemctl详解](https://zhuanlan.zhihu.com/p/6985891769)
+- [Linux find命令：在目录中查找文件（超详解）](https://c.biancheng.net/view/779.html)
+- [Linux之locate命令](https://zhuanlan.zhihu.com/p/386616614)
+- [Linux—umask（创建文件时的掩码）用法详解](https://blog.csdn.net/Change_Improve/article/details/106107317)
+- [Linux权限详解（chmod、600、644、700、711、755、777、4755、6755、7755）「建议收藏」](https://cloud.tencent.com/developer/article/2069886)
+- [linux中mv命令使用详解](https://blog.csdn.net/qq_43248623/article/details/107819260)
