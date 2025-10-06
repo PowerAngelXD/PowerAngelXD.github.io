@@ -425,7 +425,7 @@ man [cmd]
 
 **使用效果**
 
-![../img/LinuxCmd/man.png](../../img/LinuxCmd/LinuxCmd/man.png)
+![../img/LinuxCmd/man.png](../img/LinuxCmd/LinuxCmd/man.png)
 
 ### 20. `info` 命令
 与man命令类似，但是功能更高级
