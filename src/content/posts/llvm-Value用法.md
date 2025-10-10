@@ -4,7 +4,7 @@ published: 2025-10-05
 description: ''
 image: ''
 tags: [LLVM编译器开发]
-category: ''
+category: 'LLVM编译器开发'
 draft: false 
 lang: ''
 ---
@@ -12,6 +12,9 @@ lang: ''
 # llvm::Value 使用指南
 
 本文档快速介绍了 LLVM 中 `llvm::Value` 的常见用法、重要 API、示例代码和常见陷阱。适合在使用 LLVM IRBuilder/Module/Context 时作为速查手册。
+
+> [!WARNING]
+> 本篇内容几乎均由ai生成，给作者做了解用 
 
 ## 简短契约
 - 输入：LLVM C++ API（IRBuilder、Module、Context 等已可用）
