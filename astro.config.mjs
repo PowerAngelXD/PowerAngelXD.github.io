@@ -56,7 +56,7 @@ export default defineConfig({
 			},
 		}),
 		expressiveCode({
-			themes: [expressiveCodeConfig.theme, expressiveCodeConfig.theme],
+			themes: ["catppuccin-frappe", "light-plus"],
 			plugins: [
 				pluginCollapsibleSections(),
 				pluginLineNumbers(),
