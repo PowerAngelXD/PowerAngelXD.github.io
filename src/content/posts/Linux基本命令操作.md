@@ -20,7 +20,7 @@ cat [file-name]
 ```
 **使用效果：**
 
-![../img/LinuxCmd/cat.png](../img/LinuxCmd/cat.png)
+![img/LinuxCmd/cat.png](img/LinuxCmd/cat.png)
 
 其它用法： 
 #### 1.
@@ -37,7 +37,7 @@ cat [file-1] [file-2] ... > [file-n]
 ```
 **使用效果：**
 
-![../img/LinuxCmd/cat2.png](../img/LinuxCmd/cat2.png)
+![img/LinuxCmd/cat2.png](img/LinuxCmd/cat2.png)
 
 
 #### 2.
@@ -69,7 +69,7 @@ touch [file-1] [file-2] ...
 
 **使用效果：**
 
-![../img/LinuxCmd/touch.png](../img/LinuxCmd/touch.png)
+![img/LinuxCmd/touch.png](img/LinuxCmd/touch.png)
 
 ### 3. `file` 命令
 file命令用于确定对应文件的文件类型，在没有文件拓展名的情况下依然适用: 
@@ -79,28 +79,28 @@ file [file-name]
 
 **使用效果：**
 
-![../img/LinuxCmd/file.png](../img/LinuxCmd/file.png)
+![img/LinuxCmd/file.png](img/LinuxCmd/file.png)
 
 ### 4. `cd` 命令
 cd命令用于更改当前工作目录
 
 **使用效果：**
 
-![../img/LinuxCmd/cd.png](../img/LinuxCmd/cd.png)
+![img/LinuxCmd/cd.png](img/LinuxCmd/cd.png)
 
 ### 5. `pwd` 命令
 该命令用于输出当前的工作目录
 
 **使用效果：**
 
-![../img/LinuxCmd/pwd.png](../img/LinuxCmd/pwd.png)
+![img/LinuxCmd/pwd.png](img/LinuxCmd/pwd.png)
 
 ### 6. `mkdir` 命令
 该命令用于在当前工作目录下创建一个目录
 
 **使用效果：**
 
-![../img/LinuxCmd/mkdir.png](../img/LinuxCmd/mkdir.png)
+![img/LinuxCmd/mkdir.png](img/LinuxCmd/mkdir.png)
 
 #### 参数（参数支持组合）：
 
@@ -108,24 +108,24 @@ cd命令用于更改当前工作目录
 
 **使用效果：**
 
-![../img/LinuxCmd/mkdir2.png](../img/LinuxCmd/mkdir2.png)
+![img/LinuxCmd/mkdir2.png](img/LinuxCmd/mkdir2.png)
 
 `-v`：该用法可以在创建目录的时候输出对应信息
 
 **使用效果：**
 
-![../img/LinuxCmd/mkdir3.png](../img/LinuxCmd/mkdir3.png)
+![img/LinuxCmd/mkdir3.png](img/LinuxCmd/mkdir3.png)
 
 ### 7. `rmdir` 命令
 rmdir只能用于用于删除空的目录
 
 **使用效果：**
 
-![../img/LinuxCmd/rmdir.png](../img/LinuxCmd/rmdir.png)
+![img/LinuxCmd/rmdir.png](img/LinuxCmd/rmdir.png)
 
 而当你尝试用rmdir删除一个非空目录的时候，会报错：
 
-![../img/LinuxCmd/rmdirerr.png](../img/LinuxCmd/rmdirerr.png)
+![img/LinuxCmd/rmdirerr.png](img/LinuxCmd/rmdirerr.png)
 
 ***其中，t1是我们先前用于演示 mkdir -p 时的产物（t1里面还有其他目录）***
 
@@ -134,23 +134,23 @@ rmdir只能用于用于删除空的目录
 
 **使用效果：**
 
-![../img/LinuxCmd/stat.png](../img/LinuxCmd/stat.png)
+![img/LinuxCmd/stat.png](img/LinuxCmd/stat.png)
 
 #### 参数（支持参数组合）
 `-f`：显示文件所在文件系统的信息
 
-![../img/LinuxCmd/stat2.png](../img/LinuxCmd/stat2.png)
+![img/LinuxCmd/stat2.png](img/LinuxCmd/stat2.png)
 
 `-t`：以简洁方式输出
 
-![../img/LinuxCmd/stat3.png](../img/LinuxCmd/stat3.png)
+![img/LinuxCmd/stat3.png](img/LinuxCmd/stat3.png)
 
 ### 9. `more` 命令
 该命令用于查看文本文件（且文件内容量大需要翻页的时候）
 
 **使用效果：**
 
-![../img/LinuxCmd/more.png](../img/LinuxCmd/more.png)
+![img/LinuxCmd/more.png](img/LinuxCmd/more.png)
 
 在下方，会有一个百分比表示已显示的内容占全文的比例，因此翻页之后会看到这个百分比会上涨
 
@@ -163,8 +163,8 @@ more +N [file]
 
 **使用效果：**
 
-![../img/LinuxCmd/more2.png](../img/LinuxCmd/more2.png)
-![../img/LinuxCmd/more3.png](../img/LinuxCmd/more3.png)
+![img/LinuxCmd/more2.png](img/LinuxCmd/more2.png)
+![img/LinuxCmd/more3.png](img/LinuxCmd/more3.png)
 
 `-N`：实例用法：
 ```bash
@@ -174,8 +174,8 @@ more -N [file]
 
 **使用效果：**
 
-![../img/LinuxCmd/more2.png](../img/LinuxCmd/more2.png)
-![../img/LinuxCmd/more3.png](../img/LinuxCmd/more4.png)
+![img/LinuxCmd/more2.png](img/LinuxCmd/more2.png)
+![img/LinuxCmd/more3.png](img/LinuxCmd/more4.png)
 
 ### 10. `less` 命令
 与more类似，也是一个可以查看大文本的工具，但是less更倾向于单独开了一个窗口，退出的时候需要按q键进行退出
@@ -185,7 +185,7 @@ more -N [file]
 
 **使用效果：**
 
-![../img/LinuxCmd/head.png](../img/LinuxCmd/head.png)
+![img/LinuxCmd/head.png](img/LinuxCmd/head.png)
 
 #### 参数
 `-N`：指定显示前N行：
@@ -194,14 +194,14 @@ head -N [file]
 ```
 **使用效果：**
 
-![../img/LinuxCmd/head2.png](../img/LinuxCmd/head2.png)
+![img/LinuxCmd/head2.png](img/LinuxCmd/head2.png)
 
 ### 12. `tail` 命令
 与上一个命令相反，tail命令显示文件的倒数N行
 
 **使用效果：**
 
-![../img/LinuxCmd/tail.png](../img/LinuxCmd/tail.png)
+![img/LinuxCmd/tail.png](img/LinuxCmd/tail.png)
 
 至于参数方面，与head类似，进行类比即可
 ### 13. `ln` 命令
@@ -215,15 +215,15 @@ head -N [file]
 
 指向相同的inode的链接：
 
-![../img/LinuxCmd/hardln.png](../img/LinuxCmd/hardln.png)
+![img/LinuxCmd/hardln.png](img/LinuxCmd/hardln.png)
 
 **使用效果：**
 
-![../img/LinuxCmd/hardln2.png](../img/LinuxCmd/hardln2.png)
+![img/LinuxCmd/hardln2.png](img/LinuxCmd/hardln2.png)
 
 此时，我们若输入 `ls -li` 命令，即可查看这些硬链接和他们的文件之间的关系：
 
-![../img/LinuxCmd/hardln3.png](../img/LinuxCmd/hardln3.png)
+![img/LinuxCmd/hardln3.png](img/LinuxCmd/hardln3.png)
 
 ***需要注意的是，a_hln和b_hln均为对应文件a，b的硬链接***
 
@@ -249,13 +249,13 @@ ln -s [src] [sym-link]
 
 **使用效果**
 
-![../img/LinuxCmd/rm.png](../img/LinuxCmd/rm.png)
+![img/LinuxCmd/rm.png](img/LinuxCmd/rm.png)
 
 `-r`：递归删除，用于删除目录以及其下所有文件
 
 **使用效果**
 
-![../img/LinuxCmd/rm2.png](../img/LinuxCmd/rm2.png)
+![img/LinuxCmd/rm2.png](img/LinuxCmd/rm2.png)
 
 `-f`：不询问，直接删除
 
@@ -274,7 +274,7 @@ cp [source] [target]
 
 **使用效果**
 
-![../img/LinuxCmd/cp.png](../img/LinuxCmd/cp.png)
+![img/LinuxCmd/cp.png](img/LinuxCmd/cp.png)
 
 #### 参数
 `-r`：递归复制，复制目录及其下所有文件（或目录）
@@ -288,7 +288,7 @@ mv [source] [target]
 ```
 **使用效果**
 
-![../img/LinuxCmd/mv.png](../img/LinuxCmd/mv.png)
+![img/LinuxCmd/mv.png](img/LinuxCmd/mv.png)
 
 #### 参数
 `-b`：对需要覆盖的文件进行备份
@@ -358,7 +358,7 @@ chmod [perms] [target]
 ```
 **使用效果**
 
-![../img/LinuxCmd/chmod.png](../img/LinuxCmd/chmod.png)
+![img/LinuxCmd/chmod.png](img/LinuxCmd/chmod.png)
 
 ***我们只改变了other的权限，所以仅在后三位发生变动***
 
@@ -376,7 +376,7 @@ u+rwx
 
 **使用效果**
 
-![../img/LinuxCmd/chmod2.png](../img/LinuxCmd/chmod2.png)
+![img/LinuxCmd/chmod2.png](img/LinuxCmd/chmod2.png)
 
 #### **chgrp**
 该命令用于更改文件或者是目录的所属组
@@ -386,7 +386,7 @@ chgrp [grp-name] [file]
 
 **使用效果**
 
-![../img/LinuxCmd/chgrp.png](../img/LinuxCmd/chgrp.png)
+![img/LinuxCmd/chgrp.png](img/LinuxCmd/chgrp.png)
 
 ##### 参数
 `-R`：递归执行，对当前目录下的所有文件或者目录进行chgrp操作
@@ -396,7 +396,7 @@ chgrp [grp-name] [file]
 
 **使用效果（以八进制形式指定）**
 
-![../img/LinuxCmd/umask.png](../img/LinuxCmd/umask.png)
+![img/LinuxCmd/umask.png](img/LinuxCmd/umask.png)
 
 需要注意的是，用这种方式指定的时候，所给出的值是被对位的最大值相减得到的，用下表解释：
 
@@ -414,7 +414,7 @@ chgrp [grp-name] [file]
 
 **使用效果（以符号形式指定）**
 
-![../img/LinuxCmd/umask2.png](../img/LinuxCmd/umask2.png)
+![img/LinuxCmd/umask2.png](img/LinuxCmd/umask2.png)
 
 ### 19. `man` 命令
 查看系统自带的手册，虽然是英文版
@@ -425,14 +425,14 @@ man [cmd]
 
 **使用效果**
 
-![../img/LinuxCmd/man.png](../img/LinuxCmd/man.png)
+![img/LinuxCmd/man.png](img/LinuxCmd/man.png)
 
 ### 20. `info` 命令
 与man命令类似，但是功能更高级
 
 **使用效果**
 
-![../img/LinuxCmd/info.png](../img/LinuxCmd/info.png)
+![img/LinuxCmd/info.png](img/LinuxCmd/info.png)
 
 ### 21. `help` 命令
 用于简略的查看各个命令的帮助
@@ -442,26 +442,26 @@ man [cmd]
 
 **使用效果**
 
-![../img/LinuxCmd/help.png](../img/LinuxCmd/help.png)
+![img/LinuxCmd/help.png](img/LinuxCmd/help.png)
 
 ### 22. `which` 命令
 用于定位系统中的可执行文件，返回第一个找到的结果
 
 **使用效果**
 
-![../img/LinuxCmd/which.png](../img/LinuxCmd/which.png)
+![img/LinuxCmd/which.png](img/LinuxCmd/which.png)
 
 #### 参数
 `-a`：列出全部符合要求的项目
 
-![../img/LinuxCmd/which2.png](../img/LinuxCmd/which2.png)
+![img/LinuxCmd/which2.png](img/LinuxCmd/which2.png)
 
 ### 23. `whereis` 命令
 whereis命令提供了比which更多的信息，除了可执行文件以外，它还能定位其他的相关文件，如手册文件或者源代码文件
 
 **使用效果**
 
-![../img/LinuxCmd/whereis.png](../img/LinuxCmd/whereis.png)
+![img/LinuxCmd/whereis.png](img/LinuxCmd/whereis.png)
 
 ### 24. `find` 命令
 用于查找指定的文件
@@ -475,7 +475,7 @@ find [source] -[mode] [expect]
 
 **使用效果**
 
-![../img/LinuxCmd/find.png](../img/LinuxCmd/find.png)
+![img/LinuxCmd/find.png](img/LinuxCmd/find.png)
 
 ### 24. `locate` 命令
 用于列出路径中匹配给定pattern的实例
@@ -485,12 +485,12 @@ locate [options] [pattern]
 
 **使用效果**
 
-![../img/LinuxCmd/locate2.png](../img/LinuxCmd/locate2.png)
+![img/LinuxCmd/locate2.png](img/LinuxCmd/locate2.png)
 
 #### 常见参数
 `-n N`：指定输出找到的前N行
 
-![../img/LinuxCmd/locate.png](../img/LinuxCmd/locate.png)
+![img/LinuxCmd/locate.png](img/LinuxCmd/locate.png)
 
 `-i`：忽略大小写进行查找
 
@@ -503,7 +503,7 @@ grep [options] pattern [files]
 ```
 **使用效果**
 
-![../img/LinuxCmd/grep.png](../img/LinuxCmd/grep.png)
+![img/LinuxCmd/grep.png](img/LinuxCmd/grep.png)
 
 #### 参数
 `-i`：忽略大小写进行匹配
@@ -542,7 +542,7 @@ systemctl [options] command [name]
 
 **使用效果**
 
-![../img/LinuxCmd/systemctl.png](../img/LinuxCmd/systemctl.png)
+![img/LinuxCmd/systemctl.png](img/LinuxCmd/systemctl.png)
 
 `enable`：设置服务开机自启
 
@@ -554,7 +554,7 @@ ifconfig [eth] [options]
 
 **使用效果**
 
-![../img/LinuxCmd/ifconfig.png](../img/LinuxCmd/ifconfig.png)
+![img/LinuxCmd/ifconfig.png](img/LinuxCmd/ifconfig.png)
 
 #### 参数
 `up/down`：up用于启用网卡，down用于关闭网卡
@@ -568,7 +568,7 @@ ifconfig [eth] [options]
 
 **使用效果**
 
-![../img/LinuxCmd/ping.png](../img/LinuxCmd/ping.png)
+![img/LinuxCmd/ping.png](img/LinuxCmd/ping.png)
 
 #### 参数
 `-c N`：设置发送请求的次数为N
@@ -582,35 +582,35 @@ ifconfig [eth] [options]
 
 **使用效果**
 
-![../img/LinuxCmd/netstat.png](../img/LinuxCmd/netstat.png)
+![img/LinuxCmd/netstat.png](img/LinuxCmd/netstat.png)
 
 ### 32. `w` 命令
 该命令用于显示当前登录到系统中的用户及其进程的信息。它可以显示谁已登录，以及他们正在执行的活动和进程
 
 **使用效果**
 
-![../img/LinuxCmd/w.png](../img/LinuxCmd/w.png)
+![img/LinuxCmd/w.png](img/LinuxCmd/w.png)
 
 ### 33. `last` 命令
 该命令追踪用户的登录情况，包括登录时间、持续时间、登录终端以及登录IP地址等信息
 
 **使用效果**
 
-![../img/LinuxCmd/last.png](../img/LinuxCmd/last.png)
+![img/LinuxCmd/last.png](img/LinuxCmd/last.png)
 
 ### 34. `lastlog` 命令
 该命令可以查看到每个系统用户最近一次登陆系统的时间
 
 **使用效果**
 
-![../img/LinuxCmd/lastlog.png](../img/LinuxCmd/lastlog.png)
+![img/LinuxCmd/lastlog.png](img/LinuxCmd/lastlog.png)
 
 ### 35. `echo` 命令
 用于输出显示文本或者是变量的值
 
 **使用效果**
 
-![../img/LinuxCmd/echo.png](../img/LinuxCmd/echo.png)
+![img/LinuxCmd/echo.png](img/LinuxCmd/echo.png)
 #### 其他用法
 - 重定向操作
   ```bash
@@ -620,7 +620,7 @@ ifconfig [eth] [options]
 
   **使用效果**
 
-  ![../img/LinuxCmd/echo2.png](../img/LinuxCmd/echo2.png)
+  ![img/LinuxCmd/echo2.png](img/LinuxCmd/echo2.png)
 
 ### 36 - 43：关于用户系统的命令操作
 先对Linux的用户系统进行简单的介绍
