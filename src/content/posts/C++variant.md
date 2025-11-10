@@ -3,8 +3,8 @@ title: C++variant
 published: 2025-11-10
 description: ''
 image: ''
-tags: [C++]
-category: ['C++', 'C++标准库学习']
+tags: [C++标准库学习]
+category: 'C++学习'
 draft: false 
 lang: ''
 ---
