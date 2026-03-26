@@ -11,7 +11,7 @@ lang: ''
 # Array-and-Permutation
 
 ## 题面
-Given a permutation $p$ of length $n$$^{\text{∗}}$ and an array $a$ of length $n$.
+Given a permutation $p$ of length $n$ $^{\text{∗}}$ and an array $a$ of length $n$.
 
 We call the permutation $p$ generating for the array $a$ if the array $a$ can be obtained from the permutation $p$ by applying some number of operations (possibly zero) of the following type:
 
