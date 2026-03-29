@@ -1,6 +1,6 @@
 ---
 title: 论文深度解读：DeepSeek-R1——强化学习开启逻辑推理的新纪元
-published: 2025-01-20
+published: 2026-02-04
 description: ''
 image: ''
 tags: [科学文献]
