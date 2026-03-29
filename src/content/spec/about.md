@@ -3,7 +3,7 @@
 
 #### 开发方面，主要是C++，golang方向，在C#，Java也有一定的涉猎
 #### 开发项目（有废稿预警）
-::github{repo="PowerAngelXD/SakoraE"}
+::github{repo="PowerAngelXD/SakuraE"}
 ::github{repo="PowerAngelXD/Sakora"}
 ::github{repo="PowerAngelXD/YoLang"}
 ::github{repo="PowerAngelXD/EytionPlusPlus"}
