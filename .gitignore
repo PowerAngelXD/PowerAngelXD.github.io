@@ -26,4 +26,6 @@ package-lock.json
 bun.lockb
 yarn.lock
 
-src/content/posts/img/test.drawio.png
+# ide
+.idea
+*.iml
