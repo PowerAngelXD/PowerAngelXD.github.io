@@ -1,7 +1,7 @@
 ---
 title: AVL树
 published: 2026-01-20
-description: ""
+description: "AVL树的讲解"
 image: ""
 tags: [数据结构]
 category: "算法"

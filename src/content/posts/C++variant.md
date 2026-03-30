@@ -1,7 +1,7 @@
 ---
 title: C++variant
 published: 2025-11-10
-description: ''
+description: '对C++variant的概述，了解其用途'
 image: ''
 tags: [C++标准库学习]
 category: 'C++学习'

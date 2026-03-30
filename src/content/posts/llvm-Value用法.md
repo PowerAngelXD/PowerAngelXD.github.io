@@ -1,7 +1,7 @@
 ---
 title: llvm-Value用法
 published: 2025-10-05
-description: ''
+description: 'llvm::Value的用法'
 image: ''
 tags: [LLVM编译器开发]
 category: 'LLVM编译器开发'
