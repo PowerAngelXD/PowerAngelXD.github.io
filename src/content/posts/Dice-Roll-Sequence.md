@@ -1,7 +1,7 @@
 ---
 title: Dice-Roll-Sequence
 published: 2026-03-28
-description: ''
+description: 'CodeFore每日一题题解'
 image: ''
 tags: [CF题解, 算法]
 category: '算法'
