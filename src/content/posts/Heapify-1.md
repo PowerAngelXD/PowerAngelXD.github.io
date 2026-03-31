@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Heapify-1
+
 ## 题面
 You are given a permutation $a$ of length $n$ $^{\text{∗}}$.
 

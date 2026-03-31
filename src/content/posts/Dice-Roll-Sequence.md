@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Dice Roll Sequence
+
 ## 题面
 Consider the following cube $D$ where numbers $x$ and $7-x$ **lie on opposite sides**:
 

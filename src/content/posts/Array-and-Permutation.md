@@ -8,8 +8,6 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Array-and-Permutation
-
 ## 题面
 Given a permutation $p$ of length $n$ $^{\text{∗}}$ and an array $a$ of length $n$.
 

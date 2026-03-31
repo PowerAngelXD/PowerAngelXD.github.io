@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Sieve-of-Erato67henes
+
 ## 题面
 You are given $n$ **positive** integers $a_1,a_2,\ldots,a_n$.
 

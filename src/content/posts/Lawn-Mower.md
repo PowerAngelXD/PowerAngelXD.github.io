@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Lawn-Mower
+
 ## 题面
 The exit from the summer cottage is fenced with a fence consisting of $n$ boards, each $1$ meter wide. To the left and right of the exit are the fences of other plots. Some of the boards of the fence want to be removed for the construction of a bathhouse (possibly all or none), while there is an automatic lawn mower on the plot that is $w$ meters wide and must not leave the plot through a hole in the fence.
 

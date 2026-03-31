@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Code Force Round div2 1089
+
 ## A题 A Simple Sequence
 [原题](https://codeforces.com/contest/2210/problem/A)
 ### 思路

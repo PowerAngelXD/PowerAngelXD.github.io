@@ -8,7 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-# Friend Numbers
+
 ## 题面
 For an integer $x$, we call another integer $y$ friendly if the following condition holds:
 

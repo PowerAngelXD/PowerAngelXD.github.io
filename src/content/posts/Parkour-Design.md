@@ -8,10 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
-
-# Parkour Design
 ## 题面
- 
 Today, Alex wants to build a parkour course for Steve to train his parkour skills on. A parkour course is a sequence $p_0 \to p_1 \to \ldots \to p_k$ of integer coordinates on the plane. Here, a contiguous pair of coordinates is called a move, denoted as $p_{i-1} \to p_i$.
 
 Alex knows that Steve can only perform the following types of moves:

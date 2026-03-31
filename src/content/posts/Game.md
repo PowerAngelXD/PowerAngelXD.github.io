@@ -9,7 +9,6 @@ draft: false
 lang: ''
 ---
 
-# Game
 ## 题面
 Alice and Bob are playing a card game. The game consists of $3$ rounds, in each round both players score some points (from $0$ to $k$), and for each round, Alice's score differs from Bob's score. The player who scores more points in a round is considered the winner of that round.
 
