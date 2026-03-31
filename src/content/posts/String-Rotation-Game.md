@@ -43,7 +43,9 @@ For each testcase, output a single integer denoting the maximum score you can ac
 
 之后，就可以计算出块数：$N = D + 1$
 
-> [!NOTE] 为什么要+1 ?
+> [!NOTE] 
+> **为什么要+1 ?**
+> 
 > 最终的答案是“块的最大值”，而如果不+1，最终计算的只是基于第一个块之后的新块的数量
 > 因此，我们加上这个1，才能体现总的块数量
 > 
