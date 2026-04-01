@@ -3,7 +3,7 @@ title: Reverse-a-Permutation
 published: 2026-04-01
 description: 'CodeFore每日一题题解'
 image: ''
-tags: [CF题解, 算法，每日一题]
+tags: [CF题解, 算法, 每日一题]
 category: '算法'
 draft: false 
 lang: ''
