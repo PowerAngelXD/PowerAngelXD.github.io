@@ -3,7 +3,7 @@ title: Friendly-Numbers
 published: 2026-03-24
 description: 'CodeFore每日一题题解'
 image: ''
-tags: [CF题解, 算法]
+tags: [CF题解, 算法，每日一题]
 category: '算法'
 draft: false 
 lang: ''
