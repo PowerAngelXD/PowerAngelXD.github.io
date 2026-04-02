@@ -1,10 +1,10 @@
 ---
 title: DBMB-and-the-Array
 published: 2026-04-02
-description: ''
+description: 'CodeFore每日一题题解'
 image: ''
-tags: []
-category: ''
+tags: [CF题解, 算法, 每日一题]
+category: '算法'
 draft: false 
 lang: ''
 ---
