@@ -8,6 +8,7 @@ category: '算法'
 draft: false 
 lang: ''
 ---
+
 ## 题面
 Today, KQ has an exam at the Grail Academy. A strict teacher gave a task that KQ could not solve. He was given two arrays $a$ and $b$ of length $n$. KQ is allowed to perform the following operations on the arrays:
 
