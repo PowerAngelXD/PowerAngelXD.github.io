@@ -1,0 +1,45 @@
+---
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { categoryDescriptions } from "@/config";
+import { getCategoryList } from "@utils/content-utils";
+
+const categories = await getCategoryList();
+---
+
+<MainGridLayout title={i18n(I18nKey.categories)}>
+	<section aria-labelledby="categories-title" class="card-base px-6 py-7 md:px-9 md:py-8">
+		<div class="mb-7">
+			<h1 id="categories-title" class="text-2xl font-bold text-90 md:text-3xl">
+				{i18n(I18nKey.categories)}
+			</h1>
+			<p class="mt-2 text-60">按主题浏览全部文章。</p>
+		</div>
+
+		<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+			{categories.map((category) => {
+				const name = category.name.trim();
+				const description =
+					categoryDescriptions[name] || "浏览该分类下的全部文章。";
+				return (
+					<a
+						href={category.url}
+						aria-label={`查看 ${name} 分类的 ${category.count} 篇文章`}
+						class="group btn-plain flex min-h-36 flex-col justify-between rounded-xl border border-black/10 bg-black/[0.02] p-5 transition hover:border-[var(--primary)] hover:bg-[var(--btn-plain-bg-hover)] dark:border-white/10 dark:bg-white/[0.03]"
+					>
+						<div class="flex items-start justify-between gap-4">
+							<h2 class="font-bold text-lg text-90 transition group-hover:text-[var(--primary)]">
+								{name}
+							</h2>
+							<span class="shrink-0 rounded-md bg-[var(--primary)] px-2 py-1 text-xs font-bold text-white">
+								{category.count} 篇
+							</span>
+						</div>
+						<p class="mt-4 text-sm leading-6 text-60">{description}</p>
+					</a>
+				);
+			})}
+		</div>
+	</section>
+</MainGridLayout>

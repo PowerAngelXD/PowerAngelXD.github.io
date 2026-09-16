@@ -47,7 +47,8 @@ export type Favicon = {
 export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
-	About = 2,
+	Categories = 2,
+	About = 3,
 }
 
 export type NavBarLink = {
@@ -100,3 +101,5 @@ export type BlogPostData = {
 export type ExpressiveCodeConfig = {
 	theme: string;
 };
+
+export type CategoryDescriptionConfig = Record<string, string>;

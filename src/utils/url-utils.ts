@@ -12,6 +12,11 @@ function joinUrl(...parts: string[]): string {
 	return joined.replace(/\/+/g, "/");
 }
 
+export function getPostCategory(slug: string): string | null {
+	const parts = slug.split("/").filter(Boolean);
+	return parts.length > 1 ? parts[0].trim() || null : null;
+}
+
 export function getPostUrlBySlug(slug: string): string {
 	return url(`/posts/${slug}/`);
 }

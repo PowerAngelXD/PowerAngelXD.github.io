@@ -1,4 +1,5 @@
 import type {
+	CategoryDescriptionConfig,
 	ExpressiveCodeConfig,
 	LicenseConfig,
 	NavBarConfig,
@@ -40,7 +41,21 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [LinkPreset.Home, LinkPreset.Archive, LinkPreset.About],
+	links: [
+		LinkPreset.Home,
+		LinkPreset.Categories,
+		LinkPreset.Archive,
+		LinkPreset.About,
+	],
+};
+
+// Category names are collected from post frontmatter. Add optional descriptions here
+// with the exact category name as the key.
+export const categoryDescriptions: CategoryDescriptionConfig = {
+	算法: "记录算法题解、思路推导与复杂度分析。",
+	数据结构: "整理常用数据结构的原理、实现和应用。",
+	论文阅读: "分享对论文、模型和研究工作的理解。",
+	编程: "收录编程语言、工具链与工程实践笔记。",
 };
 
 export const profileConfig: ProfileConfig = {
