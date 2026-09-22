@@ -23,7 +23,7 @@ BF算法最容易理解，也是最暴力的方法
 *BF 算法示意动图*
 
 那么我们可以写出代码：
-```C++
+```cpp
 int BFSearch(std::string source, std::string pat) {
     if (source.size() < pat.size()) return -1;
 
@@ -144,7 +144,7 @@ $$
 ![](../img/BFandKMP/2.gif)
 
 这个时候，我们就可以写出代码：
-```c++
+```cpp
 std::vector<int> buildNext(std::string pat) {
     std::vector<int> next(pat.size(), 0);
     int j = 0;
@@ -163,7 +163,7 @@ std::vector<int> buildNext(std::string pat) {
 对于上面这段代码，还有一些需要注意的地方
 
 对于第五行的 **while** 循环：
-```c++
+```cpp
 while (j > 0 && pat[j] != pat[i]) {
     j = next[j - 1];
 }
@@ -171,17 +171,17 @@ while (j > 0 && pat[j] != pat[i]) {
 此处的意图是在当前的范围 $0..i$ 下，最长的前后缀是否还是 $next[j - 1]$ 所表示的那个候选
 
 如果发生了情况：`pat[j] != pat[i]`，那么说明此时的字串前后缀候选不成立，这个时候我们就需要将当前的候选进行回退，回退到一个更短的候选长度，因此要有代码：
-```c++
+```cpp
 j = next[j - 1];
 ```
 
 反之，如果匹配上了，那么就可以给当前的候选长度 + 1：
-```c++
+```cpp
 if (pat[j] == pat[i]) j ++;
 ```
 
 当 $next$ 数组建立完毕之后，就可以写出KMP算法的代码了：
-```c++
+```cpp
 int KMPSearch(std::string source, std::string pat) {
     auto next = buildNext(pat);
 
@@ -206,13 +206,13 @@ int KMPSearch(std::string source, std::string pat) {
 这个部分保证，当此处的字符失配时，不让主串 $i$ 回退，而是利用 $next$ 让模式串的匹配位置 $j$ 回退
 
 而如果回退后能够重新匹配，就继续扩大匹配长度，也就是下面的 **if** 语句：
-```c++
+```cpp
 if (source[i] == pat[j]) j ++;
 ```
 
 ## BF算法和KMP算法的性能比较
 基于上面的代码，写出测试代码：
-```c++
+```cpp
 int main() {
     std::string A = "OGenshinImpactOdwrgwrgGenshinImpactOGenshinImpactOgergGenshinImpactLPF.DF;.[.#@$@@FFBUBV]FGJCOMVONonvonbe#@$$??gbbjpjov---vdfbseblplfgggVONonvonpppPP";
     std::string B = "FGJCOMVON";
